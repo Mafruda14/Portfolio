@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- link for instra,fb,github -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>Home</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-black bg-black">
+    
+  <a class="navbar-brand" href="/">Programmer Mafruda</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/project">Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/certificate">Certificate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact with me</a>
+      </li>
+      
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  </nav> 
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Full Screen Background Image</title>
+<style>
+  /* Make body and html fill the whole viewport */
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Fullscreen background image */
+  .background-image {
+    position: fixed; /* so it stays fixed during scroll */
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/image/laptop\ \(2\).jpg') no-repeat center center/cover;
+    z-index: -1; /* behind content */
+  }
+
+  /* Overlay container */
+  .overlay-text {
+    position: relative;
+    color: blueviolet;
+    padding: 2rem 4rem;
+    max-width: 700px;
+    margin: auto 0 auto 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center */
+    align-items: flex-start; /* left align */
+  }
+
+  /* Fade-in animations */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+
+  .fade-in.delay-1 {
+    animation-delay: 0.5s;
+  }
+
+  .fade-in.delay-2 {
+    animation-delay: 1s;
+  }
+
+  .fade-in.delay-3 {
+    animation-delay: 1.5s;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="background-image"></div>
+
+<div class="overlay-text">
+  <img src="/image/IMG_20241210_204855.jpg" style="height: 80px; font-weight: 80px;" class="circle-image">
+  <style>
+    .circle-image {
+            width: 15%;
+            height: 300%;
+            border-radius: 200%;
+            object-fit: cover;
+            transition: all 0.4s ease;
+        
+        }
+  </style>
+  <h2 class="fade-in delay-1">Hello, I am</h2>
+  <h2 class="fade-in delay-2">Mafruda Jaman</h2>
+  <h4 class="fade-in delay-3">
+    I am a tech enthusiast and problem solver who loves turning complex challenges into elegant solutions.
+    I am always exploring new ways to innovate through code.
+  </h4>
+</div>
+
